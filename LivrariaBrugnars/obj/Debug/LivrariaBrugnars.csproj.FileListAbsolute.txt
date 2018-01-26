@@ -1,0 +1,63 @@
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Bot Application.dll.config
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Bot Application.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Bot Application.pdb
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Autofac.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Chronic.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Autofac.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Connector.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Newtonsoft.Json.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\System.Net.Http.Formatting.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\System.Web.Http.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\System.Web.Http.WebHost.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Autofac.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Autofac.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Connector.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Newtonsoft.Json.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\System.Net.Http.Formatting.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\System.Web.Http.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\System.Web.Http.WebHost.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\cs\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\it\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\nl\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\pt-BR\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\ar\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\cs\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\de-dE\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\en\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\es\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\fa\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\fr\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\ja\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\zh-hans\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\LivrariaBrugnars.csprojResolveAssemblyReference.cache
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\LivrariaBrugnars.csproj.CoreCompileInputs.cache
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\Bot Application.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\Bot Application.pdb
