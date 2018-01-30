@@ -31,13 +31,13 @@ namespace LivrariaBrugnars.Dialogs
             await context.PostAsync("Olá! Eu sou o bot da livraria Brugnars.");
         }
 
-        [LuisIntent("Produto")]
-        public async Task Produto(IDialogContext context, LuisResult result)
+        [LuisIntent("Produtos")]
+        public async Task Produtos(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync($"Está procurando pelo livro {result.Query} estou correto?");
+            await context.PostAsync($"Está procurando por {result.Query} estou correto?");
         }
 
-        [LuisIntent("Preco")]
+        [LuisIntent("Preço")]
         public async Task Preco(IDialogContext context, LuisResult result)
         {
             var moedas = result.Entities?.Select(e => e.Entity);
