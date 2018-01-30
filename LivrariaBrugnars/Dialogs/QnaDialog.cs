@@ -11,11 +11,11 @@ using System.Web;
 namespace LivrariaBrugnars.Dialogs
 {
     [Serializable]
-    public class QnaDialog: QnAMakerDialog
+    public class QnaDialog : QnAMakerDialog
     {
-        public QnaDialog() : base(new QnAMakerService(new QnAMakerAttribute(ConfigurationManager.AppSettings["QnaSubscriptionKey"], ConfigurationManager.AppSettings["QnaKnowledgebaseId"],"Não encontrei sua resposta ",0.5)))
+        public QnaDialog() : base(new QnAMakerService(new QnAMakerAttribute(ConfigurationManager.AppSettings["QnaSubscriptionKey"], ConfigurationManager.AppSettings["QnaKnowledgebaseId"], "Não encontrei sua resposta ", 0.5)))
         {
-            
+
         }
 
         protected override async Task RespondFromQnAMakerResultAsync(IDialogContext context, IMessageActivity message, QnAMakerResults result)
@@ -26,7 +26,7 @@ namespace LivrariaBrugnars.Dialogs
 
             var dadosResposta = primeiraResposta.Split(';');
 
-            if(dadosResposta.Length == 1)
+            if (dadosResposta.Length == 1)
             {
                 await context.PostAsync(primeiraResposta);
                 return;
@@ -36,6 +36,7 @@ namespace LivrariaBrugnars.Dialogs
             var descricao = dadosResposta[1];
             var url = dadosResposta[2];
             var urlImagem = dadosResposta[3];
+
 
             HeroCard card = new HeroCard
             {
@@ -54,7 +55,9 @@ namespace LivrariaBrugnars.Dialogs
             };
 
             resposta.Attachments.Add(card.ToAttachment());
+
             await context.PostAsync(resposta);
+
         }
     }
 }

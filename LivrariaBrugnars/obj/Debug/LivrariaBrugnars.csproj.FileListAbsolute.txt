@@ -61,3 +61,6 @@ C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\Livrar
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\LivrariaBrugnars.csproj.CoreCompileInputs.cache
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\Bot Application.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\Bot Application.pdb
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Extensions.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Extensions.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Rest.ClientRuntime.xml
