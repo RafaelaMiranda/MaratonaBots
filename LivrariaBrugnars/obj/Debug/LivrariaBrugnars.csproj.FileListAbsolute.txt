@@ -64,3 +64,4 @@ C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\Bot Ap
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Extensions.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Extensions.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\AdaptiveCards.dll

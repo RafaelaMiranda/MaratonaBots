@@ -1,10 +1,13 @@
 ﻿using System;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Connector;
+using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
+using AdaptiveCards;
+using System.Linq;
 using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
-using Microsoft.Bot.Connector;
 
 namespace LivrariaBrugnars.Dialogs
 {
@@ -31,17 +34,59 @@ namespace LivrariaBrugnars.Dialogs
             await context.PostAsync("Olá! Eu sou o bot da livraria Brugnars.");
         }
 
-        [LuisIntent("Produtos")]
-        public async Task Produtos(IDialogContext context, LuisResult result)
+        [LuisIntent("A seleção")]
+        public async Task A_Selecao(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync($"Está procurando por {result.Query} estou correto?");
+            var activity = (Activity)context.Activity;
+            var message = activity.CreateReply();
+
+            var heroCard = new HeroCard()
+            {
+                Title = "A Seleção",
+                Subtitle = "Para trinta e cinco meninas, a Seleção é a chance de uma vida inteira. A chance de viver em um palácio e competir pelo coração do lindo Príncipe Maxon. Mas para America Singer, ser selecionado é um pesadelo. Isso significa virar as costas para o amor secreto com Aspen, que é uma casta abaixo dela, e deixando sua casa para entrar em uma competição feroz por uma coroa que ela não quer.",
+                Images = new List<CardImage>
+                {
+                    new CardImage("https://images-na.ssl-images-amazon.com/images/I/51NtuhvaEJL._SX363_BO1,204,203,200_.jpg","Box a seleção")
+                },
+
+                Buttons = new List<CardAction>
+                {
+                    new CardAction(ActionTypes.OpenUrl, "Compre aqui", null, "https://www.amazon.com.br/Selection-5-Book-Box-Set-Complete/dp/0062651633?tag=goog0ef-20&smid=A1ZZFT5FULY4LN&ascsubtag=f15fb8fc-581f-4b8c-a6a2-f69ae703b993")
+                }
+            };
+
+            message.Attachments.Add(heroCard.ToAttachment());
+            await context.PostAsync(message);
         }
 
-        [LuisIntent("Preço")]
-        public async Task Preco(IDialogContext context, LuisResult result)
+        [LuisIntent("Harry Potter")]
+        public async Task Harry_Potter(IDialogContext context, LuisResult result)
         {
             var moedas = result.Entities?.Select(e => e.Entity);
             await context.PostAsync($"Trabalhamos com as moedas {string.Join(",", moedas.ToArray())}");
         }
+
+        [LuisIntent("Divergente")]
+        public async Task Divergente(IDialogContext context, LuisResult result)
+        {
+            var moedas = result.Entities?.Select(e => e.Entity);
+            await context.PostAsync($"Trabalhamos com as moedas {string.Join(",", moedas.ToArray())}");
+        }
+
+        [LuisIntent("O pequeno principe")]
+        public async Task Pequeno_Principe(IDialogContext context, LuisResult result)
+        {
+            var moedas = result.Entities?.Select(e => e.Entity);
+            await context.PostAsync($"Trabalhamos com as moedas {string.Join(",", moedas.ToArray())}");
+        }
+
+        [LuisIntent("Extraordinário")]
+        public async Task Extraordinario(IDialogContext context, LuisResult result)
+        {
+            var moedas = result.Entities?.Select(e => e.Entity);
+            await context.PostAsync($"Trabalhamos com as moedas {string.Join(",", moedas.ToArray())}");
+        }
+
+        
     }
 }
