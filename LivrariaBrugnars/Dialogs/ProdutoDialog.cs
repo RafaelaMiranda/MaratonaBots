@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 using System.Collections.Generic;
-using Newtonsoft.Json.Linq;
 using AdaptiveCards;
 using System.Linq;
 using Microsoft.Bot.Builder.Luis;
