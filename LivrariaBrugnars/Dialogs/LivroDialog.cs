@@ -182,7 +182,7 @@ namespace LivrariaBrugnars.Dialogs
                 {
                     var json = await response.Content.ReadAsStringAsync();
                     var resultado = JsonConvert.DeserializeObject<Models.Cotacao[]>(json);
-                    var cotacoes = resultado.Select(c => $"{c.Nome}: {c.Valor}" );
+                    var cotacoes = resultado.Select(c => $"R$200 ficará {c.Nome} {200 / c.Valor}" );
                     await context.PostAsync($"{string.Join(",", cotacoes.ToArray())}");
                 }
             }

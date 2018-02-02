@@ -21,7 +21,6 @@ namespace API_Precos.Controllers
             {
                 var dicionario = new Dictionary<string, List<string>>
                 {
-                    ["BRL"] = new List<string> { "real", "brl", "r$" },
                     ["USD"] = new List<string> { "dólar", "dolar", "usd" },
                     ["EUR"] = new List<string> { "euro", "eu", "eur" },
                     ["CAD"] = new List<string> { "dólar canadense", "cad", "c$" },

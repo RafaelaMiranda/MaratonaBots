@@ -64,3 +64,4 @@ C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bo
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Extensions.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Rest.ClientRuntime.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\AdaptiveCards.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\LivrariaBrugnars.csprojResolveAssemblyReference.cache
