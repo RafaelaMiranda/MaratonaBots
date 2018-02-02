@@ -7,6 +7,8 @@ using AdaptiveCards;
 using System.Linq;
 using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace LivrariaBrugnars.Dialogs
 {
@@ -159,14 +161,32 @@ namespace LivrariaBrugnars.Dialogs
             await context.PostAsync(message);
         }
 
-        [LuisIntent("Preço")]
-        public async Task Preco(IDialogContext context, LuisResult result)
+        [LuisIntent("Cotação")]
+        public async Task Cotacao(IDialogContext context, LuisResult result)
         {
             var moedas = result.Entities?.Select(e => e.Entity);
+            var filtro = string.Join(",", moedas.ToArray());
+            var endpoint = $"http://api-precos20180201084717.azurewebsites.net/api/Cotacoes/{filtro}";
 
-            await context.PostAsync($"Eu farei a cotação para as moedas {string.Join(", ", moedas.ToArray())}");
+            await context.PostAsync("Aguarde um momento enquanto eu obtenho os valores...");
+
+            using (var client = new HttpClient())
+            {
+                var response = await client.GetAsync(endpoint);
+                if (!response.IsSuccessStatusCode)
+                {
+                    await context.PostAsync("Ocorreu algum erro... tente mais tarde");
+                    return;
+                }
+                else
+                {
+                    var json = await response.Content.ReadAsStringAsync();
+                    var resultado = JsonConvert.DeserializeObject<Models.Cotacao[]>(json);
+                    var cotacoes = resultado.Select(c => $"{c.Nome}: {c.Valor}" );
+                    await context.PostAsync($"{string.Join(",", cotacoes.ToArray())}");
+                }
+            }
+
         }
-
-
     }
 }

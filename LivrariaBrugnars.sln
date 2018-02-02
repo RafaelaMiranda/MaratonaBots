@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaBrugnars", "LivrariaBrugnars\LivrariaBrugnars.csproj", "{93377A59-B18A-4FC5-B560-C9230CA8C0F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API-Precos", "API-Precos\API-Precos.csproj", "{7A56E4DC-6AE1-4820-80FC-2D823A003352}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API_Precos", "API-Precos\API_Precos.csproj", "{7A56E4DC-6AE1-4820-80FC-2D823A003352}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
