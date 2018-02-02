@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaBrugnars", "LivrariaBrugnars\LivrariaBrugnars.csproj", "{93377A59-B18A-4FC5-B560-C9230CA8C0F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API-Precos", "API-Precos\API-Precos.csproj", "{7A56E4DC-6AE1-4820-80FC-2D823A003352}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{93377A59-B18A-4FC5-B560-C9230CA8C0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93377A59-B18A-4FC5-B560-C9230CA8C0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93377A59-B18A-4FC5-B560-C9230CA8C0F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A56E4DC-6AE1-4820-80FC-2D823A003352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A56E4DC-6AE1-4820-80FC-2D823A003352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A56E4DC-6AE1-4820-80FC-2D823A003352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A56E4DC-6AE1-4820-80FC-2D823A003352}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -18,7 +18,7 @@ namespace LivrariaBrugnars
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => new Dialogs.ProdutoDialog());
+                await Conversation.SendAsync(activity, () => new Dialogs.LivroDialog());
             }
             else
             {

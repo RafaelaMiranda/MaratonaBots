@@ -13,7 +13,7 @@ namespace LivrariaBrugnars.Dialogs
     [Serializable]
     [LuisModel("1b62a432-1aec-421d-ad87-3207c175928f", "4beff44499c8492a8359493e5b1d8bd9")]
 
-    public class ProdutoDialog : LuisDialog<object>
+    public class LivroDialog : LuisDialog<object>
     {
         [LuisIntent("None")]
         public async Task None(IDialogContext context, LuisResult result)
@@ -159,6 +159,14 @@ namespace LivrariaBrugnars.Dialogs
             await context.PostAsync(message);
         }
 
-        
+        [LuisIntent("Preço")]
+        public async Task Preco(IDialogContext context, LuisResult result)
+        {
+            var moedas = result.Entities?.Select(e => e.Entity);
+
+            await context.PostAsync($"Eu farei a cotação para as moedas {string.Join(", ", moedas.ToArray())}");
+        }
+
+
     }
 }
