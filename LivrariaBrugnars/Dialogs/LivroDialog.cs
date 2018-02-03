@@ -48,11 +48,6 @@ namespace LivrariaBrugnars.Dialogs
                 Images = new List<CardImage>
                 {
                     new CardImage("https://images-na.ssl-images-amazon.com/images/I/51NtuhvaEJL._SX363_BO1,204,203,200_.jpg","Box A Seleção")
-                },
-
-                Buttons = new List<CardAction>
-                {
-                    new CardAction(ActionTypes.OpenUrl, "Compre aqui", null, "https://www.amazon.com.br/Selection-5-Book-Box-Set-Complete/dp/0062651633?tag=goog0ef-20&smid=A1ZZFT5FULY4LN&ascsubtag=f15fb8fc-581f-4b8c-a6a2-f69ae703b993")
                 }
             };
 
@@ -73,11 +68,6 @@ namespace LivrariaBrugnars.Dialogs
                 Images = new List<CardImage>
                 {
                     new CardImage("https://images.livrariasaraiva.com.br/imagemnet/imagem.aspx/?pro_id=9032983&qld=90&l=430&a=-1","Box Harry Potter")
-                },
-
-                Buttons = new List<CardAction>
-                {
-                    new CardAction(ActionTypes.OpenUrl, "Compre aqui", null, "https://www.saraiva.com.br/box-harry-potter-serie-completa-9032983.html?pac_id=123134&gclid=EAIaIQobChMIhZbp_sOF2QIVFgmRCh1X1gqfEAQYAiABEgJ1HvD_BwE")
                 }
             };
 
@@ -99,11 +89,6 @@ namespace LivrariaBrugnars.Dialogs
                 Images = new List<CardImage>
                 {
                     new CardImage("https://images-americanas.b2w.io/produtos/01/00/item/122913/7/122913764_1GG.jpg","Box Divergente")
-                },
-
-                Buttons = new List<CardAction>
-                {
-                    new CardAction(ActionTypes.OpenUrl, "Compre aqui", null, "https://www.submarino.com.br/produto/122913764/livro-box-divergente?loja=15424720000151&WT.srch=1&opn=XMLGOOGLE&epar=bp_pl_00_go_g35177&epar=bp_pl_00_go_g35177&gclid=EAIaIQobChMI0_zbtsSF2QIVgQ6RCh15GgfaEAQYASABEgJKmvD_BwE")
                 }
             };
 
@@ -124,11 +109,6 @@ namespace LivrariaBrugnars.Dialogs
                 Images = new List<CardImage>
                 {
                     new CardImage("https://images.livrariasaraiva.com.br/imagemnet/imagem.aspx/?pro_id=8501811&qld=90&l=430&a=-1","O pequeno príncipe")
-                },
-
-                Buttons = new List<CardAction>
-                {
-                    new CardAction(ActionTypes.OpenUrl, "Compre aqui", null, "https://www.saraiva.com.br/o-pequeno-principe-edicao-completa-versao-luxo-8501811.html?pac_id=123134&gclid=EAIaIQobChMImcet7sSF2QIVEwWRCh1ekgd8EAQYASABEgL14vD_BwE")
                 }
             };
 
@@ -149,11 +129,6 @@ namespace LivrariaBrugnars.Dialogs
                 Images = new List<CardImage>
                 {
                     new CardImage("https://images.livrariasaraiva.com.br/imagemnet/imagem.aspx/?pro_id=4663423&qld=90&l=430&a=-1","Extraordinário")
-                },
-
-                Buttons = new List<CardAction>
-                {
-                    new CardAction(ActionTypes.OpenUrl, "Compre aqui", null, "https://www.saraiva.com.br/extraordinario-4663423.html")
                 }
             };
 
@@ -182,7 +157,7 @@ namespace LivrariaBrugnars.Dialogs
                 {
                     var json = await response.Content.ReadAsStringAsync();
                     var resultado = JsonConvert.DeserializeObject<Models.Cotacao[]>(json);
-                    var cotacoes = resultado.Select(c => $"R$200 ficará {c.Nome} {200 / c.Valor}" );
+                    var cotacoes = resultado.Select(c => $"R$200 ficará {c.Nome} {200 / c.Valor}");
                     await context.PostAsync($"{string.Join(",", cotacoes.ToArray())}");
                 }
             }

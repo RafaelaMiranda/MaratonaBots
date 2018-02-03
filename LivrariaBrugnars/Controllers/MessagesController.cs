@@ -1,8 +1,11 @@
-﻿using System.Net;
+﻿using System;
+using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Builder.FormFlow;
 using Microsoft.Bot.Connector;
 
 namespace LivrariaBrugnars
@@ -18,7 +21,21 @@ namespace LivrariaBrugnars
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => new Dialogs.LivroDialog());
+                //await Conversation.SendAsync(activity, () => new Dialogs.LivroDialog());
+                await this.SendConversation(activity);
+            }
+            else if (activity.Type == ActivityTypes.ConversationUpdate)
+            {
+                if (activity.MembersAdded != null && activity.MembersAdded.Any())
+                {
+                    foreach (var member in activity.MembersAdded)
+                    {
+                        if(member.Id != activity.Recipient.Id)
+                        {
+                            await this.SendConversation(activity);
+                        }
+                    }
+                }
             }
             else
             {
@@ -26,6 +43,11 @@ namespace LivrariaBrugnars
             }
             var response = Request.CreateResponse(HttpStatusCode.OK);
             return response;
+        }
+
+        private async Task SendConversation(Activity activity)
+        {
+            await Conversation.SendAsync(activity, () => Chain.From(() => FormDialog.FromForm(() => Form.Pedido.BuildForm() , FormOptions.PromptFieldsWithValues)));
         }
 
         private Activity HandleSystemMessage(Activity message)
