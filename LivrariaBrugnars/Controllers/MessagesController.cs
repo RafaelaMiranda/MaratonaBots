@@ -21,21 +21,7 @@ namespace LivrariaBrugnars
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                //await Conversation.SendAsync(activity, () => new Dialogs.LivroDialog());
-                await this.SendConversation(activity);
-            }
-            else if (activity.Type == ActivityTypes.ConversationUpdate)
-            {
-                if (activity.MembersAdded != null && activity.MembersAdded.Any())
-                {
-                    foreach (var member in activity.MembersAdded)
-                    {
-                        if(member.Id != activity.Recipient.Id)
-                        {
-                            await this.SendConversation(activity);
-                        }
-                    }
-                }
+                await Conversation.SendAsync(activity, () => new Dialogs.LivroDialog());
             }
             else
             {

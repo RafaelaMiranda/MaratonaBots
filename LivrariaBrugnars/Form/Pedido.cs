@@ -10,7 +10,6 @@ namespace LivrariaBrugnars.Form
     [Serializable]
     public class Pedido
     {
-        public string Livro { get; set; }
         public string Nome { get; set; }
         public string Telefone { get; set; }
         public string Rua { get; set; }
@@ -25,7 +24,7 @@ namespace LivrariaBrugnars.Form
         {
             var form = new FormBuilder<Pedido>();
             form.Configuration.DefaultPrompt.ChoiceStyle = ChoiceStyleOptions.Buttons;
-            form.Message("Olá, seja bem vindo. Será um prazer atender você.");
+            form.Message("Boa compra. Será um prazer atender você.");
             form.OnCompletion(async (context, pedido) => {
                 //Salvar na base de dados
                 //Gerar pedido

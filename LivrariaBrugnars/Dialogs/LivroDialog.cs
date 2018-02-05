@@ -7,8 +7,12 @@ using AdaptiveCards;
 using System.Linq;
 using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
-using System.Net.Http;
 using Newtonsoft.Json;
+
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using Microsoft.Bot.Builder.FormFlow;
 
 namespace LivrariaBrugnars.Dialogs
 {
@@ -161,7 +165,34 @@ namespace LivrariaBrugnars.Dialogs
                     await context.PostAsync($"{string.Join(",", cotacoes.ToArray())}");
                 }
             }
+        }
 
+        [LuisIntent("Comprar")]
+        public async Task Comprar(IDialogContext context, LuisResult result)
+        {
+            var myform = new FormDialog<Form.Pedido>(new Form.Pedido(), Form.Pedido.BuildForm, FormOptions.PromptInStart, null);
+            context.Call(myform, LivroFormComplete);
+        }
+
+        private async Task LivroFormComplete(IDialogContext context, IAwaitable<object> result)
+        {
+            object order = null;
+            try
+            {
+                order = await result;
+            }
+            catch (OperationCanceledException)
+            {
+                await context.PostAsync("Você cancelou a compra!");
+                return;
+            }
+            context.Wait(MessageReceived);
+        }
+
+        [LuisIntent("Preço")]
+        public async Task Preco(IDialogContext context, LuisResult result)
+        {
+            await context.PostAsync($"O preço é R$200,00");
         }
     }
 }
