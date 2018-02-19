@@ -3,15 +3,11 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 using System.Collections.Generic;
-using AdaptiveCards;
 using System.Linq;
 using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
 using Newtonsoft.Json;
-
-using System.Net;
 using System.Net.Http;
-using System.Web.Http;
 using Microsoft.Bot.Builder.FormFlow;
 
 namespace LivrariaBrugnars.Dialogs
@@ -21,6 +17,8 @@ namespace LivrariaBrugnars.Dialogs
 
     public class LivroDialog : LuisDialog<object>
     {
+        private enum TipoDeProcessamento { Emocoes, Descricao, Classificacao }
+
         [LuisIntent("None")]
         public async Task None(IDialogContext context, LuisResult result)
         {
@@ -193,6 +191,45 @@ namespace LivrariaBrugnars.Dialogs
         public async Task Preco(IDialogContext context, LuisResult result)
         {
             await context.PostAsync($"O preço é R$200,00");
+        }
+
+        [LuisIntent("Chegou")]
+        public async Task Chegou(IDialogContext context, LuisResult result)
+        {
+            await context.PostAsync($"Que legal, espero ter gostado de comprar com a gente. Me envia o link de uma foto sua com o produto para postarmos no site :)");
+            context.Wait((c, a) => ProcessarImagemAsync(c, a, TipoDeProcessamento.Emocoes));
+        }
+
+        private async Task ProcessarImagemAsync(IDialogContext contexto, IAwaitable<IMessageActivity> argument, TipoDeProcessamento tipoDeProcessamento)
+        {
+            var activity = await argument;
+            Uri uri = null;
+
+            uri = activity.Attachments?.Any() == true ?
+                new Uri(activity.Attachments[0].ContentUrl) :
+                new Uri(activity.Text);
+
+            try
+            {
+                string reply;
+
+                switch (tipoDeProcessamento)
+                {
+                    case TipoDeProcessamento.Emocoes:
+                        reply = await new Servicos().DeteccaoDeEmocoesAsync(uri);
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException(nameof(tipoDeProcessamento), tipoDeProcessamento, null);
+                }
+
+                await contexto.PostAsync(reply);
+            }
+            catch (Exception)
+            {
+                await contexto.PostAsync("Ops! Deu algo errado na hora de analisar sua imagem!");
+            }
+
+            contexto.Wait(MessageReceived);
         }
     }
 }

@@ -1,11 +1,15 @@
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\LivrariaBrugnars.csprojResolveAssemblyReference.cache
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\LivrariaBrugnars.csproj.CoreCompileInputs.cache
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Bot Application.dll.config
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Bot Application.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Bot Application.pdb
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\AdaptiveCards.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Autofac.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Chronic.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Autofac.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.dll
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Extensions.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Connector.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Logging.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
@@ -23,12 +27,14 @@ C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Autofac.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Autofac.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Extensions.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Connector.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Logging.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Protocols.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Rest.ClientRuntime.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.WindowsAzure.Configuration.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Newtonsoft.Json.xml
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\System.IdentityModel.Tokens.Jwt.xml
@@ -57,11 +63,5 @@ C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\fa\Microsoft
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\fr\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\ja\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\zh-hans\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
-C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\LivrariaBrugnars.csproj.CoreCompileInputs.cache
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\Bot Application.dll
 C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\Bot Application.pdb
-C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Extensions.dll
-C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Bot.Builder.Extensions.xml
-C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\Microsoft.Rest.ClientRuntime.xml
-C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\bin\AdaptiveCards.dll
-C:\Users\rafaela\source\repos\LivrariaBrugnars\LivrariaBrugnars\obj\Debug\LivrariaBrugnars.csprojResolveAssemblyReference.cache
