@@ -25,12 +25,15 @@ namespace LivrariaBrugnars.Form
             var form = new FormBuilder<Pedido>();
             form.Configuration.DefaultPrompt.ChoiceStyle = ChoiceStyleOptions.Buttons;
             form.Message("Boa compra. Será um prazer atender você.");
+            //form.Configuration.Yes = new string[] { "sim", "yes", "s" };
+            //form.Configuration.No = new string[] { "não", "no", "n" };
+            //form.Confirm("Os dados abaixo estão corretos?");
             form.OnCompletion(async (context, pedido) => {
                 //Salvar na base de dados
                 //Gerar pedido
                 //Integrar com o serviço xpto.
                 Random random = new Random();
-                await context.PostAsync($"Seu pedido número {random.Next(1, 99999)} foi gerador e em breve será entregue.");
+                await context.PostAsync($"Seu pedido número {random.Next(1, 99999)} foi gerado e em breve será entregue.");
             });
             return form.Build();
         }

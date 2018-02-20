@@ -25,6 +25,18 @@ namespace LivrariaBrugnars.Dialogs
             await context.PostAsync($"Desculpe, não consegui entender a frase {result.Query}");
         }
 
+        [LuisIntent("Tudo bem")]
+        public async Task TudoBem(IDialogContext context, LuisResult result)
+        {
+            await context.PostAsync($"Comigo tudo ótimo :)");
+        }
+
+        [LuisIntent("Indicações")]
+        public async Task Indicacoes(IDialogContext context, LuisResult result)
+        {
+            await context.PostAsync($"Atualmente em nosso estoques temos os livros: O pequeno principe, Harry Potter, Divergente, A Seleção e Extraordinário");
+        }
+
         [LuisIntent("Sobre")]
         public async Task Sobre(IDialogContext context, LuisResult result)
         {
